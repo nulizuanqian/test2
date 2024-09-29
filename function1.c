@@ -1,11 +1,11 @@
-void addIncome( 
+void addIncome() //记录收入 
 {
-	Record newRecord;//
+	Record newRecord;
 	printf("请输入该收入日期(YYYY-MM-DD)：\n");
 	scanf("%s",&newRecord.date);
 	printf("请输入该收入的金额：\n");
 	scanf("%lf",&newRecord.amount);
-	if(newRecord.amount<=0)
+	if(newRecord.amount<=0)//判断是否为正数 
 	{
 		printf("该金额必须为正数，请重新输入！\n");
 		return;
@@ -19,14 +19,14 @@ void addIncome(
 	printf("收入记录添加成功！\n"); 
 }
 
-void addSpending() 
+void addSpending() //记录支出
 {
 	Record newRecord;
 	printf("请输入该支出的日期(YYYY-MM-DD)：\n");
 	scanf("%s",&newRecord.date); 
 	printf("请输入该支出的金额：\n");
 	scanf("%lf",&newRecord.amount);
-	if(newRecord.amount<=0)
+	if(newRecord.amount<=0)//判断是否为正数
 	{
 		printf("该金额必须为正数，请重新输入！\n");
 		return;
