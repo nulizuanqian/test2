@@ -1,6 +1,6 @@
 void addIncome( 
 {
-	Record newRecord;
+	Record newRecord;//
 	printf("请输入该收入日期(YYYY-MM-DD)：\n");
 	scanf("%s",&newRecord.date);
 	printf("请输入该收入的金额：\n");
